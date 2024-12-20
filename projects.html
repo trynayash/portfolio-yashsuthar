@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-IQO2ijqEj71ZfAGV+OjIh01A1W5bA78n5j2NJ1K6I2kg5zogFnF9Umq8Gv6qfsbd" crossorigin="anonymous">
+
+    <style>
+        /* General Reset */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar Styling */
+        nav.navbar {
+            background-color: #000000; /* Primary Blue */
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .navbar__logo {
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        nav .navbar__logo i {
+            margin-right: 8px;
+        }
+
+        nav .navbar__menu a {
+            color: #fff;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav .navbar__menu a:hover {
+            color: #FFD700; /* Gold for hover */
+        }
+
+        nav .navbar__actions {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .navbar__actions .btn {
+            background-color: #28a745; /* Green button for call-to-action */
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+        nav .navbar__actions .btn:hover {
+            background-color: #218838; /* Darker green */
+        }
+
+        /* Rotating Title Styling */
+        #rotating-heading {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #FF4500; /* Vibrant orange */
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card h3 {
+            font-size: 1.5rem;
+            color: #007BFF; /* Blue for headings */
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #555;
+        }
+
+        /* Footer Styling */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 95%;
+                padding: 15px;
+            }
+
+            #rotating-heading {
+                font-size: 2rem;
+            }
+
+            .project-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .project-card p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar__logo"><i class="fas fa-code"></i> YS</a>
+        <div class="navbar__menu">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>Murud Janjira, Maharashtra</h5>
+            </div>
+            <button class="btn">Get a Quote</button>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <div class="container">
+        <header>
+            <h1 id="rotating-heading"></h1>
+        </header>
+
+        <section id="projects" aria-labelledby="projects-heading">
+            <div class="projects-grid">
+                <!-- Project Cards -->
+                <div class="project-card">
+                    <h3>FlaskConnect</h3>
+                    <p>A community forum and resource-sharing platform, implementing file uploads, chat systems, and PostgreSQL integration.</p>
+                </div>
+                <div class="project-card">
+                    <h3>School Blog API</h3>
+                    <p>Developed using FastAPI and MongoDB, allowing for dynamic blog posting and retrieval.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Sentiment Analysis</h3>
+                    <p>A data science project to analyze movie reviews using Python libraries like Pandas and Scikit-learn.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Yash Suthar</p>
+        </footer>
+    </div>
+
+    <script>
+        const headingText = "Projects, Works, Tasks.";
+        const rotatingHeading = document.getElementById("rotating-heading");
+    
+        let i = 1;
+        let reverse = false;
+    
+        function typeEffect() {
+            if (!reverse) {
+                // Characters appear one by one
+                rotatingHeading.textContent = headingText.slice(0, i);
+                i++;
+                if (i > headingText.length) reverse = true; // Start reverse after full display
+            } else {
+                // Characters disappear one by one in reverse
+                rotatingHeading.textContent = headingText.slice(0, i);
+                i--;
+                if (i === 1) reverse = false; // Restart forward animation after reducing to one character
+            }
+        }
+    
+        setInterval(typeEffect, 150); // Typing effect interval
+    </script>
+    
+</body>
+</html>

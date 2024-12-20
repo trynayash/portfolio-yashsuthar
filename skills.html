@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Soft light gray background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+nav.navbar {
+    background-color: #1a1a1a; /* Dark background for navbar */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+nav .navbar__logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .navbar__menu a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .navbar__actions .btn {
+    background-color: #007bff; /* Primary blue button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav .navbar__actions .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.skills__intro {
+    margin-bottom: 40px;
+}
+
+.skills__intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50; /* Deep blue for headings */
+}
+
+.skills__intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Skill Cards */
+.skill__card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.skill__card:hover {
+    transform: translateY(-10px); /* Elevates card on hover */
+}
+
+.skill__card i {
+    font-size: 3rem;
+    color: #007bff; /* Primary blue for icons */
+    margin-bottom: 15px;
+}
+
+.skill__card h3 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Consistent deep blue */
+}
+
+.skill__card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a; /* Dark background */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+    />
+    <title>Skills | Yash Suthar</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar__logo"><i class="ri-code-s-slash-line"></i> YS</a>
+        <div class="navbar__menu">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="projects.html" class="navbar__link">Projects</a>
+            <a href="skills.html" class="navbar__link">Skills</a>
+            <a href="about.html" class="navbar__link">About</a>
+        </div>
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>Murud Janjira, Maharashtra</h5>
+            </div>
+            <button class="btn">Get a Quote</button>
+        </div>
+    </nav>
+
+    <section class="skills">
+        <div class="skills__intro">
+            <h2>My Skills</h2>
+            <p>A showcase of my technical expertise and proficiency in various programming languages, frameworks, and tools.</p>
+        </div>
+
+        <div class="skill__card">
+            <i class="ri-code-line"></i>
+            <h3>Programming Languages</h3>
+            <p>Proficient in languages such as JavaScript, Python, and PHP.</p>
+        </div>
+
+        <div class="skill__card">
+            <i class="ri-reactjs-line"></i>
+            <h3>Frameworks & Libraries</h3>
+            <p>React, Angular, Node.js, Flask, and Django.</p>
+        </div>
+
+        <div class="skill__card">
+            <i class="ri-database-2-line"></i>
+            <h3>Databases</h3>
+            <p>MongoDB, PostgreSQL, MySQL.</p>
+        </div>
+
+        <div class="skill__card">
+            <i class="ri-tools-line"></i>
+            <h3>Tools & Platforms</h3>
+            <p> Git, Web Hosting.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yash Suthar. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

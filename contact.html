@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #1f2937;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1f2937;
+            padding: 15px 20px;
+        }
+
+        .navbar__logo {
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar__menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar__link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 5px 10px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .navbar__link:hover {
+            background: #0750e3;
+            border-radius: 5px;
+            color: #fff;
+        }
+
+        .navbar__actions {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar__location h5 {
+            color: #fff;
+            margin: 0;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            background-color: #0750e3;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #003fc6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            background: #8c7c7c;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 35px 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #0750e3;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #000000;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .btn--form {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: #1f2937;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn--form:hover {
+            background: #050505;
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .info p {
+            margin: 15px 0;
+        }
+
+        @media (max-width: 768px) {
+            .navbar__menu {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .btn--form {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="navbar__logo"><i class="ri-code-s-slash-line"></i> Y.S</a>
+        <div class="navbar__menu">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="projects.html" class="navbar__link">Projects</a>
+            <a href="skills.html" class="navbar__link">Skills</a>
+            <a href="about.html" class="navbar__link">About</a>
+        </div>
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>Murud Janjira, Maharashtra</h5>
+            </div>
+            <button class="btn">Get a Quote</button>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <div>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn--form">Send Message</button>
+        </form>
+        <div class="info">
+            <p>Phone: +91 9561713120</p>
+            <p>Email: techyashu90@gmail.com</p>
+            <p>Address: Murud Janjira, Maharashtra</p>
+        </div>
+    </div>
+</body>
+</html>

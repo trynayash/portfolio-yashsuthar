@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Yash Suthar</title>
+    <style>
+        /* General Reset and Basic Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #090909;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.0rem;
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #190b0b;
+            padding: 20px 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav .navbar__logo {
+            font-size: 24px;
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav .navbar__menu a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        nav .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav .btn:hover {
+            background-color: #0056b3;
+        }
+        nav .navbar__actions {
+            color: #fff4f4;
+        }
+
+        .about {
+            padding: 60px 20px;
+            background-color: #fff;
+            margin: 40px auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .about__intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about__intro h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .about__intro p {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            text-align: center;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #000000;
+            font-weight: 400;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .about__details h3 {
+            color: #444;
+            margin-top: 30px;
+            font-size: 1.75rem;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            font-family:'Courier New', Courier, monospace
+        }
+
+        .about__details p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #1d1717;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .about__details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .about__details ul li {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+        }
+
+        .about__details ul li::before {
+            content: '\2713';
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="navbar__logo"><i class="ri-code-s-slash-line"></i> Y.S</a>
+        <div class="navbar__menu">
+            <a href="index.html" class="navbar__link">Home</a>
+            <a href="projects.html" class="navbar__link">Projects</a>
+            <a href="skills.html" class="navbar__link">Skills</a>
+            <a href="about.html" class="navbar__link">About</a>
+        </div>
+        <div class="navbar__actions">
+            <div class="navbar__location">
+                <h5>Murud Janjira, Maharashtra</h5>
+            </div>
+            <button class="btn">Get a Quote</button>
+        </div>
+    </nav>
+
+    <section class="about">
+        <div class="about__intro">
+            <h2>About Me</h2>
+            <p>Hello! I'm <strong>Yash Suthar</strong>, a dedicated Full-Stack Developer passionate about building scalable, efficient, and secure web applications using modern frameworks and tools. My focus lies in leveraging Python, backend development, and database management to create seamless and robust web solutions.</p>
+        </div>
+
+        <div class="about__details">
+            <h3>Educational Background</h3>
+            <p>I am currently pursuing a <strong>Bachelor of Computer Applications (BCA)</strong> at <strong>Parul University</strong>. My studies have honed my skills in backend development, database management, and the full-stack development lifecycle, focusing on Python and related technologies.</p>
+
+            <h3>Technical Expertise</h3>
+            <ul>
+                <li><strong>Full-Stack Development:</strong> Proficient in building web applications using frameworks like Flask, Django, and React.js.</li>
+                <li><strong>Backend Development:</strong> Expertise in Python-based backend frameworks, managing APIs, and handling server-side logic.</li>
+                <li><strong>Database Management:</strong> Proficient in working with PostgreSQL, MySQL, and SQLite to build and manage scalable databases.</li>
+                <li><strong>APIs & Web Services:</strong> Experienced in designing and implementing RESTful APIs for backend functionality.</li>
+                <li><strong>DevOps Tools:</strong> Familiar with Git, Docker, CI/CD pipelines, and cloud deployment platforms.</li>
+            </ul>
+
+            <h3>Passions & Goals</h3>
+            <p>My passion lies in building efficient, scalable web applications using Python and related frameworks. I aim to enhance my backend development skills, working on APIs, database management, and contributing to impactful full-stack projects that deliver seamless user experiences.</p>
+
+            <h3>Beyond Development</h3>
+            <p>When I'm not coding, I enjoy exploring new Python libraries, contributing to open-source projects, and staying updated with the latest developments in web technologies. I also enjoy collaborating with developers to build scalable solutions and improve technical knowledge.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Yash Suthar. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
