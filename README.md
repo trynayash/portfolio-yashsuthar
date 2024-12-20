@@ -19,4 +19,4 @@ Create a portfolio website that not only showcases your skills and projects but 
 
 Here we have project screenshot :
 
-![screenshot-1](screenshot.png)
+![screenshot.png](screenshot.png)
