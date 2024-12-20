@@ -1,5 +1,4 @@
-# Personal Portfolio Design #09
-Are you ready to create a professional and visually appealing personal portfolio website? In this tutorial ([Open in Youtube](https://youtu.be/LIuJUzdFWfs)) , we'll walk you through every step to build your very own portfolio from scratch using HTML and CSS! 🌐✨ Perfect for developers, designers, or anyone looking to showcase their skills and projects online.
+# Personal Portfolio Design
 
 🔑 What You'll Learn:
 
